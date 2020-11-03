@@ -12,7 +12,7 @@ public class Car {
 
     //2.Constructoren
     public Car(String color) { this.color = color; }
-    public Car(int speed, boolean isLightsOn) { this.speed = speed;this.isLightsOn = isLightsOn; }
+    public Car(int speed,boolean isLightsOn) { this.speed = speed;this.isLightsOn = isLightsOn; }
     public Car(int engine) { this.engine = engine; }
 
     //2.Getters
@@ -44,6 +44,8 @@ public class Car {
 
 
     //8. Random Utility
+    public Car(boolean isLightsOn) { this.speed = RandomGenerator.createRandomSpeed();this.isLightsOn = isLightsOn; }
+
     //9. Arrays & show parked cars
 }
 

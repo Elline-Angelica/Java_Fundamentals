@@ -15,7 +15,7 @@ public class CarApp {
         System.out.println("Car's new color: " + C1.getColor());
 
         System.out.println("****************************************");
-        Car C2 = new Car(70,true);
+        Car C2 = new Car(true);
         int C2Speed = C2.getSpeed();
         boolean C2Lights = C2.isLightsOn();
         System.out.println("The second car's speed is: " +C2Speed+"km/h");
@@ -29,6 +29,7 @@ public class CarApp {
         System.out.println("The third car's engine power is: " +C3Engine+ "hp");
         C3.setEngine(250);
         System.out.println("Car's new engine power is: "+C3.getEngine()+"hp");
+
 
 
 
