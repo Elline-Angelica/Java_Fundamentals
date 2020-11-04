@@ -1,4 +1,4 @@
-package exercises;
+package Chapter8;
 
 //30_10_2020
 
@@ -15,7 +15,7 @@ public class CarApp {
         System.out.println("Car's new color: " + C1.getColor());
 
         System.out.println("****************************************");
-        Car C2 = new Car(true);
+        Car C2 = new Car(70,true); //or leave speed parameter blank for randomgen
         int C2Speed = C2.getSpeed();
         boolean C2Lights = C2.isLightsOn();
         System.out.println("The second car's speed is: " +C2Speed+"km/h");

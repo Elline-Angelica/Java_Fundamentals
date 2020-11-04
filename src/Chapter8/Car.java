@@ -1,4 +1,4 @@
-package exercises;
+package Chapter8;
 
 public class Car {
 
@@ -7,7 +7,7 @@ public class Car {
     //1.Beschermde properties maar toegankelijk via methodes
     private int speed;
     private int engine;
-    public String color;
+    private String color = "white"; //standaard kleur
     private boolean isLightsOn;
 
     //2.Constructoren
@@ -28,23 +28,24 @@ public class Car {
     public void setEngine(int engine){ this.engine = engine; }
 
 
+    public void slowDown(int speedDifference){
+        this.speed = speed - speedDifference<0?speed-speedDifference:speed;
+    }
+
 //3.Car functions - Speed not less than 0
 //3.Car functions - parkMethod -> speed is zero and lights off
 //3.Car functions - remove setter and use rePaint method + show price
 //3.Car functions - lightsToggle
-
-
-
-
 
 //ConstructorChaining & PrintMethod?? idk
 // public void printMethod(){}
 // Car counter constructor in stead of initial codeblock
 // Initial codeblocks?? idk
 
-
     //8. Random Utility
     public Car(boolean isLightsOn) { this.speed = RandomGenerator.createRandomSpeed();this.isLightsOn = isLightsOn; }
+
+
 
     //9. Arrays & show parked cars
 }
