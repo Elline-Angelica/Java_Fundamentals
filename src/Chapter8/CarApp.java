@@ -30,6 +30,16 @@ public class CarApp {
         C3.setEngine(250);
         System.out.println("Car's new engine power is: "+C3.getEngine()+"hp");
 
+        Car car1 = new Car("purple");
+        car1.rePaint("red");
+        Car car2 = new Car(200);
+        car2.speedUp(30);
+        Car car3 = new Car(100, false);
+        car3.toggleLights();
+
+        System.out.println("Amount of cars made: " + Car.getCounter());
+
+
 
 
 
