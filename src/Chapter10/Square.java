@@ -2,6 +2,13 @@ package Chapter10;
 
 public class Square extends Rectangle{
 
+
+    private static int count = 0;
+
+    {
+        count++;
+    }
+
     //getters
     public int getSide(){
         return getHeight();
