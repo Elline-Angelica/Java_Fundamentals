@@ -1,4 +1,4 @@
-package exercises;
+package be.intecbrussel;
 
 import java.util.Scanner;
 
