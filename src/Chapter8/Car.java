@@ -5,18 +5,35 @@ public class Car {
     //30_10_2020
 
     //1.Beschermde properties maar toegankelijk via methodes
+    private static int counter = 0;
     private int speed;
     private int engine;
-    private String color = "white"; //standaard kleur
+    private String color; //= "white"; //standaard kleur
     private boolean isLightsOn;
 
-    private static int counter = 0;
 
     //2.Constructoren
-    public Car(String color) { this.color = color; }
-    public Car(int speed,boolean isLightsOn) { this.speed = speed;this.isLightsOn = isLightsOn; }
-    public Car(int engine) { this.engine = engine; }
+    public Car() {
+        this(0, 100, "white", false);
+    }
 
+    public Car(String color) {
+        this(0, 100, color, false);
+    }
+
+    public Car(int engine) {
+        this(0,engine,"white",false);
+    }
+
+    public Car(int speed, int engine, String color, boolean isLightsOn) {
+        this.speed = speed;
+        this.engine = engine;
+        this.color = color;
+        this.isLightsOn = isLightsOn;
+        counter++;
+    }
+
+    //Methods
     //2.Getters
     public String getColor() { return color; }
     public int getSpeed() { return speed; }
@@ -63,6 +80,10 @@ public class Car {
     public void toggleLights() {
         this.isLightsOn = !isLightsOn;
         System.out.println("Are the lights on? " + isLightsOn);
+    }
+
+    public void print() {
+        System.out.println("Color: " + this.color + " Speed: " + this.speed + ", Light status: " + this.isLightsOn);
     }
 
 }

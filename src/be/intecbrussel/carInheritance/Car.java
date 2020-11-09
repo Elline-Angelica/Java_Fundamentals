@@ -10,11 +10,19 @@ public class Car {
 
     //__________________INSTANCE METHODS__________________
     public void accelerater(int amount){
-        this.speed += (amount+(hp/100));
+        if(amount < 0){
+            slow(-amount);
+        }else {
+            this.speed += (amount + (hp / 100));
+        }
     }
 
     public void slow(int amount){
-        this.speed -= (amount+(hp/100));
+        if(amount < 0){
+            accelerater(-amount);
+        }else {
+            this.speed -= (amount + (hp / 100));
+        }
     }
 
     public void park(){
@@ -35,8 +43,8 @@ public class Car {
     }
 
     //______________________GETTERS________________________
-    public String getColor() {
-        return color;
+    public String getColor(){
+        return this.color;
     }
 
     public int getSpeed() {
@@ -45,10 +53,9 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "Car: " +
                 "color='" + color + '\'' +
                 ", speed=" + speed +
-                ", hp=" + hp +
-                '}';
+                ", hp=" + hp + " ";
     }
 }

@@ -4,12 +4,12 @@ public class Cabrio extends Car{
 
     private boolean sunroof;
 
-    public void openRoof(boolean toggle){
-        this.sunroof = toggle;
-    }
+    public void openRoof(){
+        this.sunroof = !this.sunroof;
+    } //toggle function
 
     public boolean getRoof(){
-        return sunroof;
+        return this.sunroof;
     }
 
     @Override

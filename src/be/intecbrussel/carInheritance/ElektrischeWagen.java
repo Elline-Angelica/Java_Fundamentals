@@ -15,7 +15,7 @@ public class ElektrischeWagen extends Car {
     }
 
     public void charge(int amount) {
-        this.battery = amount;
+        this.battery = amount;  //om op te laden this.batter += amount
     }
 
     public int getBattery() {
