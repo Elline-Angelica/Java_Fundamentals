@@ -7,7 +7,7 @@ public class Square extends Rectangle{
 
     //init blok
     {
-        count = 0;
+        count++;
     }
 
     //_________________constructors___________________
