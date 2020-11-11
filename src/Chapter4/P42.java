@@ -17,10 +17,9 @@ public class P42 {
             var guess = keyboard.nextInt();
             if (guess < numberToGuess) {
                 System.out.println("Higher!");
+            } else if (guess > numberToGuess) {
+                 System.out.println("Lower!");
             } else {
-                if (guess > numberToGuess) {
-                    System.out.println("Lower!");
-                } else {
                     System.out.println("Ya guessed right!");
                     guessed = true;
                 }
@@ -29,4 +28,4 @@ public class P42 {
 
         }
     }
-}
+

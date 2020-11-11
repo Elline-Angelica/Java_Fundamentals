@@ -2,14 +2,32 @@ package Chapter9;
 
 import java.util.*;
 
-public class HigherLowerGame{
+public class HigherLowerGame {
 
-    private int value;
-    private int max;
-    private Random rand;
+    private static int value;
 
-    public HigherLowerGame(int max) {
-        this.max = max;
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+
+    public static String guessMethod(int guessValue) {
+            if (guessValue < value) {
+                return "Higher";
+            } else if (guessValue > value) {
+                return "Lower";
+            } else {
+                return "Got it!";
+            }
+    }
+}
+
+//BOOK
+    /* public HigherLowerGame(int upperbound) {
+        this.max = upperbound;
         this.rand = new Random();
         reset();
     }
@@ -18,7 +36,7 @@ public class HigherLowerGame{
         value = rand.nextInt(max +1);
     }
 
-    public int guess(int guessValue) {
+    public  int guessMethod(int guessValue) {
         if (guessValue < value) {
             return -1;
         } else if (guessValue > value) {
@@ -26,5 +44,4 @@ public class HigherLowerGame{
         } else {
             return 0;
         }
-    }
-}
+    } */
