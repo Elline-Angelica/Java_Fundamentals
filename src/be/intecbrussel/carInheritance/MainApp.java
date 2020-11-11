@@ -11,7 +11,7 @@ public class MainApp {
         cabrio.setColor("Yellow");
         cabrio.setHp(200);
 
-        ElektrischeWagen ecar = new ElektrischeWagen(); //ask manu, wrm niet mogelijk object car
+        ElektrischeWagen ecar = new ElektrischeWagen();
         ecar.setColor("Green");
         ecar.charge(60);
 

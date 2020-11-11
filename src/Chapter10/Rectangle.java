@@ -7,9 +7,17 @@ public class Rectangle {
      private int x;
      private int y;
 
-    //constructors (ex7p163)
+     public static final int ANGLES = 4;
+     private static int count = 0;
+
+    {
+        count++;
+    }
+
+
+    //______________________constructors______________________
     public Rectangle(){
-//       this(0,0,0,0); // Ex8p165
+//       this(0,0,0,0); //roept constructor met meeste parameters (4)
     }
 
     public Rectangle(int width, int height){
@@ -22,6 +30,7 @@ public class Rectangle {
         setWidth(width);
         setX(x);
         setY(y);
+      //  count++;
     }
 
     public Rectangle(Rectangle rect){
@@ -34,7 +43,7 @@ public class Rectangle {
 
 
 
-    //setters
+    //______________________setters______________________
     public void setHeight(int height){
         this.height = height>0? height: -height;
     }
@@ -69,7 +78,8 @@ public class Rectangle {
         }
     }
 
-    //getters
+
+    //______________________getters______________________
     public int getArea(){
         return height*width;
     }
@@ -94,6 +104,7 @@ public class Rectangle {
         return y;
     }
 
-
-
+    public static int getCount() {
+        return count;
+    }
 }

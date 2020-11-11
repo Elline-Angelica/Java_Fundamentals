@@ -1,4 +1,4 @@
-package Chapter8;
+package be.intecbrussel.givenExcercises;
 
 //30_10_2020
 
