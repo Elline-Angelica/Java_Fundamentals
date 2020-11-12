@@ -1,4 +1,4 @@
-package Chapter4;
+package Chapter_A_4_ProgrammingLogic;
 
 public class P40 {
     public static void main(String[] args) {

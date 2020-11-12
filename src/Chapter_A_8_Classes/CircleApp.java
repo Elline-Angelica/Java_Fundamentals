@@ -1,4 +1,4 @@
-package Chapter8;
+package Chapter_A_8_Classes;
 
 public class CircleApp extends Circle{
     public static void main(String[] args) {

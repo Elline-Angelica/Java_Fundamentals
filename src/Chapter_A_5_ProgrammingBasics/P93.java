@@ -1,4 +1,4 @@
-package Chapter5;
+package Chapter_A_5_ProgrammingBasics;
 
 public class P93 {
     //while loops

@@ -1,4 +1,4 @@
-package Chapter10;
+package Chapter_B_10_Inheritance;
 
 public class RectangleApp {
     public static void main(String[] args){

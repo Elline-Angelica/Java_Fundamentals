@@ -1,6 +1,4 @@
-package Chapter9;
-
-import java.util.*;
+package Chapter_A_9_ClassRelations;
 
 public class HigherLowerGame {
 

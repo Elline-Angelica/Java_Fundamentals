@@ -1,4 +1,4 @@
-package Chapter9;
+package Chapter_A_9_ClassRelations;
 
 import java.util.Random;
 import java.util.Scanner;
