@@ -5,22 +5,25 @@ public class Square extends Rectangle{
     //___________________variabelen___________________
     private static int count = 0;
 
-    //init blok
     {
         count++;
     }
 
     //_________________constructors___________________
     public Square(){
-        super();
+        this(1,1,1);
     }
 
     public Square(int s){
-
+        this(s,1,1);
     }
 
     public Square(int s, int x, int y){
+        super(s,s,x,y);
+    }
 
+    public Square(Square square){
+        this(square.getSide(), square.getX(), square.getY());
     }
 
 
@@ -39,11 +42,15 @@ public class Square extends Rectangle{
         super.setWidth(s);
     }
 
+    @Override
     public void setHeight(int h){
         setSide(h);
     }
 
+    @Override
     public void setWidth(int w){
         setSide(w);
     }
-}
+
+    }
+
