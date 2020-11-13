@@ -3,7 +3,7 @@ package Chapter_A_4_ProgrammingLogic;
 import java.util.Random;
 import java.util.*;
 
-public class P42 {
+public class P42_HigherLower {
 
     public static void main(String[] args) {
         var keyboard = new Scanner(System.in);

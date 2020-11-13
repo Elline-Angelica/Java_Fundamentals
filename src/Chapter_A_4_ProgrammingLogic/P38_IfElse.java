@@ -2,7 +2,7 @@ package Chapter_A_4_ProgrammingLogic;
 
 import java.util.Scanner;
 
-public class P38 {
+public class P38_IfElse {
 
     public static void main(String [] args){
         Scanner scanner = new Scanner(System.in);

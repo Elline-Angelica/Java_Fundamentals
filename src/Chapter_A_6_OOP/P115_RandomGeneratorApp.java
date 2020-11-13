@@ -3,7 +3,7 @@ package Chapter_A_6_OOP;
 import java.util.Arrays;
 import java.util.Random;
 
-public class RandomGeneratorApp {
+public class P115_RandomGeneratorApp {
 
     public static void main(String[] args) {
         Random rand = new Random();

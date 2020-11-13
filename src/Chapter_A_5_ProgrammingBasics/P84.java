@@ -2,7 +2,8 @@ package Chapter_A_5_ProgrammingBasics;
 
 import java.util.Scanner;
 
-public class P84 {
+public class
+P84 {
 
     //Opdracht 14
 

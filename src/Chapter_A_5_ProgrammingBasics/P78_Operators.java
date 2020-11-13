@@ -2,7 +2,7 @@ package Chapter_A_5_ProgrammingBasics;
 
 import java.util.Scanner;
 
-public class P78 {
+public class P78_Operators {
 
     //Opdracht 12
 

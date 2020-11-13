@@ -1,6 +1,6 @@
 package Chapter_A_4_ProgrammingLogic;
 
-public class P40 {
+public class P40_ForLoop {
     public static void main(String[] args) {
         System.out.println("Take flour");
         System.out.println("Add milk");

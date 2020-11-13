@@ -1,6 +1,6 @@
 package Chapter_A_5_ProgrammingBasics;
 
-public class P74 {
+public class P74_Conditionals {
 
     //Opdracht 11
 
