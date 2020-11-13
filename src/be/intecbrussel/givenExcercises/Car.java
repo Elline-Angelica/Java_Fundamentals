@@ -4,15 +4,15 @@ public class Car {
 
     //30_10_2020
 
-    //1.Beschermde properties maar toegankelijk via methodes
+    //1.Private properties but accessible via methods
     private static int counter = 0;
     private int speed;
     private int engine;
-    private String color; //= "white"; //standaard kleur
+    private String color; //= "white"; //standard color
     private boolean isLightsOn;
 
 
-    //2.Constructoren
+    //2.Constructors
     public Car() {
         this(0, 100, "white", false);
     }
@@ -33,7 +33,6 @@ public class Car {
         counter++;
     }
 
-    //Methods
     //2.Getters
     public String getColor() { return color; }
     public int getSpeed() { return speed; }
@@ -41,13 +40,13 @@ public class Car {
     public int getEngine() { return engine; }
     public static int getCounter() { return counter;}
 
-    //2.Settters
+    //2.Setters
     public void setColor(String color) { this.color = color; }
-    public void setSpeed(int speed) { if (speed >= 0) { this.speed = speed; } else { System.out.println("Listen.. Let's not make this any more difficult. Just pick a speed greater or equal to zero man.");}}
+    public void setSpeed(int speed) { if (speed >= 0) { this.speed = speed; } }
     public void setLightsOn ( boolean lightsOn){ this.isLightsOn = isLightsOn; }
     public void setEngine(int engine){ this.engine = engine;    counter++; }
 
-
+    //Additional Methods
     public void slowDown(int speedDifference) {
         this.speed = speed-speedDifference<0?0:speed-speedDifference;
         System.out.println("The car is now driving at " + speed + " km/h");
