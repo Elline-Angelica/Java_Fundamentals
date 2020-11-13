@@ -5,9 +5,7 @@ public class Square extends Rectangle{
     //___________________variabelen___________________
     private static int count = 0;
 
-    {
-        count++;
-    }
+    static { count++; }
 
     //_________________constructors___________________
     public Square(){

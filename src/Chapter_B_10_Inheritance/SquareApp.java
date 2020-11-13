@@ -16,7 +16,6 @@ public class SquareApp{
         sq.setSide(3);
         sq.setPosition(5,5); //set.position from rectangle
 
-
             System.out.println("The amount of squares are: " + sq.getCount());
             System.out.println("square properties:");
             System.out.println("area: " + sq.getArea());
