@@ -2,7 +2,7 @@ package Chapter_B_10_Inheritance;
 
 public class Square extends Rectangle{
 
-    //___________________variabelen___________________
+    //___________________variables___________________
     private static int count = 0;
 
     static { count++; }

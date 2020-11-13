@@ -10,14 +10,11 @@ public class Rectangle {
      public static final int ANGLES = 4;
      private static int count = 0;
 
-    {
-        count++;
-    }
-
+    static { count++; }
 
     //______________________constructors______________________
     public Rectangle(){
-//       this(0,0,0,0); //roept constructor met meeste parameters (4)
+//       this(0,0,0,0); //calls constructor with most parameters (4)
     }
 
     public Rectangle(int width, int height){
@@ -106,5 +103,9 @@ public class Rectangle {
 
     public static int getCount() {
         return count;
+    }
+
+    public int getAngles() {
+        return ANGLES;
     }
 }
