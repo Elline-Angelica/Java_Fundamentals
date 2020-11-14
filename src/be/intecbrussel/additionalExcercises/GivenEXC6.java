@@ -1,4 +1,4 @@
-package be.intecbrussel.givenExcercises;
+package be.intecbrussel.additionalExcercises;
 
 import java.util.Scanner;
 

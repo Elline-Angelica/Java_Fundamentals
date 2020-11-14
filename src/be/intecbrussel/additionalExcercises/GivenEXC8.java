@@ -1,6 +1,4 @@
-package be.intecbrussel.givenExcercises;
-
-import java.util.Scanner;
+package be.intecbrussel.additionalExcercises;
 
 public class GivenEXC8 {
 
