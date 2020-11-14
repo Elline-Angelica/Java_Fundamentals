@@ -1,4 +1,4 @@
-package be.intecbrussel.additionalExcercises.associations_aggregations;
+package be.intecbrussel.additionalExcercises.associations_aggregations.Part2;
 
 public class Engine {
     private int fuel;
