@@ -1,43 +1,37 @@
-package Chapter_10_Inheritance;
+package Chapter_10_Inheritance.P197_Shapes;
 
-public class Rectangle {
+public class Rectangle extends Shape{
 
      private int height;
      private int width;
-     private int x;
-     private int y;
 
      public static final int ANGLES = 4;
-     private static int count = 0;
+     private static int count;
 
-    static { count++; }
+    static {
+        count++;
+    }
 
     //______________________constructors______________________
     public Rectangle(){
 //       this(0,0,0,0); //calls constructor with most parameters (4)
+        this(1,1);
     }
 
     public Rectangle(int width, int height){
-        setHeight(height);
-        setWidth(width);
+        this(width,height,1,1);
     }
 
     public Rectangle(int width, int height, int x, int y){
         setHeight(height);
         setWidth(width);
-        setX(x);
-        setY(y);
+        setPosition(x,y);
       //  count++;
     }
 
     public Rectangle(Rectangle rect){
-        setHeight(rect.height);
-        setWidth(rect.width);
-        setX(rect.x);
-        setY(rect.y);
-
+        this(rect.getHeight(),rect.getWidth(),rect.getX(),rect.getY());
     }
-
 
 
     //______________________setters______________________
@@ -47,19 +41,6 @@ public class Rectangle {
 
     public void setWidth(int width){
         this.width = width>0? width : -width;
-    }
-
-    public void setPosition(int x, int y){
-        this.x = x;
-        this.y = y;
-    }
-
-    public void setX(int x){
-        this.x = x;
-    }
-
-    public void setY(int y){
-        this.y = y;
     }
 
     public void grow(int d){
@@ -77,11 +58,11 @@ public class Rectangle {
 
 
     //______________________getters______________________
-    public int getArea(){
+    public double getArea(){
         return height*width;
     }
 
-    public int getPerimeter(){
+    public double getPerimeter(){
         return height*2+width*2;
     }
 
@@ -93,19 +74,21 @@ public class Rectangle {
         return width;
     }
 
-    public int getX(){
-        return x;
-    }
-
-    public int getY(){
-        return y;
-    }
-
     public static int getCount() {
         return count;
     }
 
     public int getAngles() {
         return ANGLES;
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "height=" + height +
+                ", width=" + width +
+                ", xPos= " + getX() +
+                ", yPos= " + getY() +
+                '}';
     }
 }

@@ -1,4 +1,4 @@
-package Chapter_10_Inheritance;
+package Chapter_10_Inheritance.P197_Shapes;
 
 public class RectangleApp {
     public static void main(String[] args){

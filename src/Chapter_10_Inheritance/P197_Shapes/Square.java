@@ -1,4 +1,4 @@
-package Chapter_10_Inheritance;
+package Chapter_10_Inheritance.P197_Shapes;
 
 public class Square extends Rectangle{
 
@@ -9,7 +9,7 @@ public class Square extends Rectangle{
 
     //_________________constructors___________________
     public Square(){
-        this(1,1,1);
+        this(10,1,1);
     }
 
     public Square(int s){
@@ -49,6 +49,8 @@ public class Square extends Rectangle{
     public void setWidth(int w){
         setSide(w);
     }
+
+
 
     }
 
