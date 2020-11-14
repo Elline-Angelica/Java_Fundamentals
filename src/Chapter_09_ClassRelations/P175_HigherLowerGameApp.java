@@ -3,7 +3,7 @@ package Chapter_09_ClassRelations;
 import java.util.Random;
 import java.util.Scanner;
 
-public class HigherLowerGameApp extends HigherLowerGame{
+public class P175_HigherLowerGameApp extends P174_HigherLowerGame {
 
     public static void main(String[] args) {
 
@@ -11,7 +11,7 @@ public class HigherLowerGameApp extends HigherLowerGame{
         Random r = new Random();
         int toGuess = r.nextInt(2);
 
-        HigherLowerGame object = new HigherLowerGame();
+        P174_HigherLowerGame object = new P174_HigherLowerGame();
 
             System.out.println("Enter a number");
             int input = sc.nextInt();

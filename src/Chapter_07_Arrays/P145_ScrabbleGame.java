@@ -2,7 +2,7 @@ package Chapter_07_Arrays;
 
 import java.util.Scanner;
 
-public class ScrabbleGame {
+public class P145_ScrabbleGame {
 
     public static void main (String[] args) {
 

@@ -1,8 +1,7 @@
 package Chapter_07_Arrays;
 
 
-public class P144<i>
-{
+public class P144 {
     public static void main(String[] args) {
 
         int[][] data = new int[5][5];

@@ -1,6 +1,6 @@
 package Chapter_08_Classes;
 
-public class Circle {
+public class P172_Circle {
 
     public static final int ANGLES = 0;
     public static int count = 0;
@@ -16,15 +16,15 @@ public class Circle {
 
     //_________________________constructors_________________________
 
-    public Circle(){
+    public P172_Circle(){
 
     }
 
-    public Circle(int radius){
+    public P172_Circle(int radius){
         setRadius(radius);
     }
 
-    public Circle(int radius, int x, int y){
+    public P172_Circle(int radius, int x, int y){
        setRadius(radius);
        setX(x);
        setY(y);
@@ -59,7 +59,7 @@ public class Circle {
     }
 
     public static void setRadius(int radius){
-        Circle.radius = radius;
+        P172_Circle.radius = radius;
     }
 
     public static double getArea(int radius){
@@ -73,7 +73,7 @@ public class Circle {
     }
 
     public static void grow(int d){
-        Circle.radius = radius+d;
+        P172_Circle.radius = radius+d;
     }
 
     public static int getCount(int count){

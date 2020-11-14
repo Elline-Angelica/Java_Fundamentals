@@ -1,6 +1,6 @@
 package Chapter_09_ClassRelations;
 
-public class HigherLowerGame {
+public class P174_HigherLowerGame {
 
     private static int value;
 

@@ -1,15 +1,15 @@
 package Chapter_08_Classes;
 
-public class CircleApp extends Circle{
+public class P172_CircleApp extends P172_Circle {
     public static void main(String[] args) {
 
-        Circle c = new Circle();
-        Circle c2 = new Circle(1,90,100);
+        P172_Circle c = new P172_Circle();
+        P172_Circle c2 = new P172_Circle(1,90,100);
 
         c.setX(10);
         c.setY(20);
 
-        Circle c3 = new Circle(4);
+        P172_Circle c3 = new P172_Circle(4);
         //c3.setRadius(8);
         c3.setPosition(90,100);
 

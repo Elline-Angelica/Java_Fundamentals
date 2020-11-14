@@ -1,4 +1,4 @@
-package Chapter_07_Arrays;
+package Chapter_07_Arrays.Exam_Arrays;
 
 public class ArrayApp {
     public static void main(String[] args) {
