@@ -22,7 +22,7 @@ public abstract class Animal {
     }
 
     //______________methods______________
-    public abstract int move();
+    public abstract String move();
 
     public abstract String makeNoise();
 }

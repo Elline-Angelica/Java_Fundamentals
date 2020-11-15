@@ -13,8 +13,8 @@ public class Snake extends Animal {
 
     //______________methods______________
     @Override
-    public int move() {
-        return 0;
+    public String move() {
+        return "West";
     }
 
     @Override
@@ -27,6 +27,7 @@ public class Snake extends Animal {
         return "Snake{" +
                 " name= " + getName() +
                 ", noise= " + makeNoise() +
+                ", moved= " + move() +
                 "}";
     }
 }

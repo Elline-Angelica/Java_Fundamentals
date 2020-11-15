@@ -13,8 +13,8 @@ public class Bird extends Animal{
 
     //______________methods______________
     @Override
-    public int move() {
-        return 0;
+    public String move() {
+        return "East" ;
     }
 
     @Override
@@ -28,6 +28,7 @@ public class Bird extends Animal{
         return "Bird{" +
                 " name= " + getName() +
                 ", noise= " + makeNoise() +
+                ", moved= " + move() +
                 "}";
     }
 
