@@ -1,4 +1,4 @@
-package Chapter_07_Arrays.P138;
+package Chapter_07_Arrays.P138_ArrayExcercises;
 
 public class Multiples7 {
 
@@ -20,6 +20,8 @@ public class Multiples7 {
             multiples[i] = i*7;
             System.out.println(multiples[i]);
         }
+
+
 
 
 
