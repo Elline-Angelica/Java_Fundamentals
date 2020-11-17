@@ -1,4 +1,4 @@
-package be.intecbrussel.associations_aggregations.Part2;
+package be.intecbrussel.classRelations.Part2;
 
 import java.util.Comparator;
 

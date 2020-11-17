@@ -1,4 +1,4 @@
-package be.intecbrussel.associations_aggregations.Part1;
+package be.intecbrussel.classRelations.Part1;
 
 import java.util.Random;
 
