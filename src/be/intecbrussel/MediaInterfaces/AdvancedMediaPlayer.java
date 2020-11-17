@@ -2,9 +2,9 @@ package be.intecbrussel.MediaInterfaces;
 
 public interface AdvancedMediaPlayer {
 
-    public void playVlc(String fileName);
+     void playVlc(String fileName);
 
-    public void playMp4(String fileName);
+     void playMp4(String fileName);
 
 
 }

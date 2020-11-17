@@ -6,8 +6,8 @@ public class CustomerFactory {
 
         public static AbstractCustomer getCustomer(String name){
 
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[i].equalsIgnoreCase(name)){
+            for (String temp : arr) {
+                if (temp.equalsIgnoreCase(name)){
                     return new RealCustomer(name);
                 }
             }
