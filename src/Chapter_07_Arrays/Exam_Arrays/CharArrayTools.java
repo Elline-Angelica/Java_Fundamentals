@@ -10,7 +10,7 @@ public class CharArrayTools {
                 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',};
 
         for (char toCheck: charachters) {
-            for (char c : alphabet) {  //elk character vergelijke met letter alphabet
+            for (char c : alphabet) {  //compare every char to alphabet letters
                 if (c == toCheck) {
                     temp += toCheck;
                 }
