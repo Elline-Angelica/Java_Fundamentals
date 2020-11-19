@@ -24,13 +24,9 @@ enum Day {
 
     @Override
     public String toString() {
-        if (isWeekday) {
-            return "Yes";
-        } else {
-            return "No";
-        }
+        return "{Day " + dayIndication +
+                ": Is this a weekday? -> " + isWeekday + "}";
     }
-
 }
 
 
