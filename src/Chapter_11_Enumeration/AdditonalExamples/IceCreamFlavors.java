@@ -1,4 +1,9 @@
 package Chapter_11_Enumeration.AdditonalExamples;
 
-public class IceCreamFlavors {
+public enum IceCreamFlavors {
+
+    VANILLA,CHOCOLATE,STRACIATELLA,STRAWBERRY,PISTACHE,HAZELNUT;
+
+
+
 }

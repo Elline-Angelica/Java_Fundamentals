@@ -1,4 +1,7 @@
 package Chapter_11_Enumeration.AdditonalExamples;
 
-public class GameIntensity {
+public enum GameIntensity {
+
+    LOW,MEDIUM,INTERMEDIATE,HIGH;
+
 }
