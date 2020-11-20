@@ -2,22 +2,21 @@ package Chapter_14_NestedClass;
 
 public class Musician {
 
-    public class Instrument{
+        public class Instrument {
 
-        public void makeSound() {
-            System.out.println("*made sounds*");
+            public void makeSound() {
+                System.out.println("*made Moonlight Sonata*");
+            }
+
+            public void makeNoise() {
+                System.out.println("*made deaf noises*");
+            }
         }
 
-        public void makeNoise(){
-            System.out.println("*made noise*");
+        public void play() {
+            Instrument inner = new Instrument();
+            inner.makeSound();
+            inner.makeNoise();
         }
-    }
-
-    public void play() {
-        Instrument inner = new Instrument();
-        inner.makeSound();
-        inner.makeNoise();
-    }
-
 
 }
