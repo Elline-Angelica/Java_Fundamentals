@@ -1,4 +1,4 @@
-package Chapter_14_NestedClass;
+package Chapter_14_NestedClass.BookExcercises;
 
 public class MusicianApp {
     public static void main(String[] args) {
