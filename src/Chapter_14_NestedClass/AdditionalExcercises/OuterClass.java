@@ -28,7 +28,7 @@ public class OuterClass {
 
     public class InnerClass{
         //inner classes ARE ASSOCIATED with an instance of the enclosing class
-        //inner classes can access static and non sttaic members of the enclosing class
+        //inner classes can access static and non static members of the enclosing class
         //will need objects
 
         //instance level field
