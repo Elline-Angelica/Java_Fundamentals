@@ -1,6 +1,6 @@
-package Chapter_17_GenericClasses;
+package Chapter_17_GenericClasses.AdditionalExcercises;
 
-public class Additional_GenericsDemo {
+public class GenericsDemo {
 
     public static void main(String[] args) {
 
