@@ -1,5 +1,5 @@
 package Chapter_15_Exceptions.AdditionalExcercises;
-import be.intecbrussel.gameshop.exceptions.GameShopException;
+import Chapter_15_Exceptions.AdditionalExcercises.Exceptions.GameShopException;
 
 import java.time.LocalDate;
 public class GameShopApp {

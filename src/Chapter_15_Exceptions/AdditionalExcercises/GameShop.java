@@ -1,9 +1,9 @@
 package Chapter_15_Exceptions.AdditionalExcercises;
 
-import be.intecbrussel.gameshop.exceptions.EmptyStockException;
-import be.intecbrussel.gameshop.exceptions.GameNotFoundException;
-import be.intecbrussel.gameshop.exceptions.NotEnoughMoneyException;
-import be.intecbrussel.gameshop.exceptions.TooYoungToGameException;
+import Chapter_15_Exceptions.AdditionalExcercises.Exceptions.EmptyStockException;
+import Chapter_15_Exceptions.AdditionalExcercises.Exceptions.GameNotFoundException;
+import Chapter_15_Exceptions.AdditionalExcercises.Exceptions.NotEnoughMoneyException;
+import Chapter_15_Exceptions.AdditionalExcercises.Exceptions.TooYoungToGameException;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
