@@ -1,4 +1,4 @@
-package be.intecbrussel.additionalExcercises;
+package Chapter_19_Streaming_API.AdditionalExcercises;
 
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
