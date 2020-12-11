@@ -1,4 +1,4 @@
-package Chapter_17_GenericClasses.AdditionalExcercises;
+package Chapter_17_Generics.AdditionalExcercises;
 
 public class GenericsDemo {
 

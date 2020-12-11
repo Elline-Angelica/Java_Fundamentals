@@ -1,4 +1,4 @@
-package Chapter_19_Streams.AdditionalExcercises;
+package Chapter_19_Streaming_API.AdditionalExcercises;
 
 public class ClassDemo {
     public static void main(String[] args) {

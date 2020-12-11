@@ -1,4 +1,4 @@
-package Chapter_17_GenericClasses.P277;
+package Chapter_17_Generics.P277;
 
 public class DuoApp {
     public static void main(String[] args) {
