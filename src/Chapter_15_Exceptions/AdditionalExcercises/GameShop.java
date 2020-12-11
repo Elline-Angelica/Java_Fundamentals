@@ -85,7 +85,7 @@ public class GameShop {
             e.printStackTrace();
         }
         if(amount <= 0){
-            throw new EmptyStockException(gameName + " is out of stock! Please check later.");
+            throw new EmptyStockException(gameName + " is out of stock! Come back later.");
         }
     }
 
@@ -95,7 +95,7 @@ public class GameShop {
                 return game;
             }
         };
-        throw new GameNotFoundException(gameName + " is not found. Please check another game.");
+        throw new GameNotFoundException(gameName + " is not found. Please check again.");
     }
 
     private void checkAge(LocalDate birthday, String gameName) throws TooYoungToGameException {
@@ -103,7 +103,7 @@ public class GameShop {
         Period period = Period.between(birthday, nowDate);
 
         if(period.getYears() < 18){
-            throw new TooYoungToGameException("Your age must be over 18 to play " + gameName);
+            throw new TooYoungToGameException("You must be over 18 to play " + gameName);
         }
     }
 

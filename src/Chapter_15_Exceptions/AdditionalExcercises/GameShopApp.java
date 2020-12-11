@@ -13,27 +13,27 @@ public class GameShopApp {
         stock.setFortniteAmount(1);
         stock.setRobloxAmount(1);
 
-        Client mert = new Client("Terry", LocalDate.of(2000, 06, 14));
-        mert.setMoney(20);
+        Client Elline = new Client("Terry", LocalDate.of(2000, 06, 14));
+        Elline.setMoney(20);
 
         GameShop.Game game = null;
         try {
-            game = gameShop.buyGame(GameShop.Game.CALL_OF_DUTY.getName(), mert);
-            mert.play(game);
+            game = gameShop.buyGame(GameShop.Game.CALL_OF_DUTY.getName(), Elline);
+            Elline.play(game);
         } catch (GameShopException e) {
             System.out.println(e.getMessage());
         }
 
         try {
-            game = gameShop.buyGame(GameShop.Game.FIFA21.getName(), mert);
-            mert.play(game);
+            game = gameShop.buyGame(GameShop.Game.FIFA21.getName(), Elline);
+            Elline.play(game);
         } catch (GameShopException e) {
             System.out.println(e.getMessage());
         }
 
         try {
-            game = gameShop.buyGame(GameShop.Game.FIFA21.getName(),mert);
-            mert.play(game);
+            game = gameShop.buyGame(GameShop.Game.FIFA21.getName(),Elline);
+            Elline.play(game);
         } catch (GameShopException e) {
             System.out.println(e.getMessage());
         }
