@@ -2,6 +2,7 @@ package be.intecbrussel.additionalExcercises;
 
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class Lambda_Streams {
 
@@ -26,7 +27,11 @@ public class Lambda_Streams {
     }
 
     public static void stringArray(){
-        String[] arr = new String[] {"Me", "5", "Myself", "i"};
+        String[] arr = new String[] {"Hello", "5", "World", "22"};
+        String str = Stream.of(arr).limit(2)
+                .map(String::toUpperCase)
+                .reduce("", (acc,el) -> acc+el + " ");
+        System.out.println(str);
     }
 
 }
