@@ -1,15 +1,12 @@
-package Chapter_20_Collections;
+package Chapter_20_Collections.P328;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.OptionalDouble;
-import java.util.Scanner;
+import java.util.*;
 
 public class Excercise1 {
 
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
-        Collection<Integer> intList = new ArrayList<>();
+        Collection<Integer> intList = new LinkedList<>();
 
         while (true) {
             int number = kb.nextInt();
