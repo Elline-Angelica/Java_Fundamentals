@@ -12,11 +12,14 @@ public class Excercise2 {
         while (true) {
             String word = kb.next();
             stringCollection.add(word);
-            if(word.endsWith(".")){
+            if(word.endsWith(".")) {
                 break;
-            } else {
-                stringCollection.add(word);
             }
         }
+
+        stringCollection.forEach(e-> System.out.println(e + " "));
+        System.out.println();
+
+      
     }
 }
