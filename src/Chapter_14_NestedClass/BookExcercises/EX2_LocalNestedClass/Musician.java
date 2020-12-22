@@ -6,7 +6,7 @@ public class Musician {
         int a = 5;
         class Instrument {
             public String toString() {
-                return "Make sound" + a;
+                return "Make sound " + a;
             }
         }
         return new Instrument();
