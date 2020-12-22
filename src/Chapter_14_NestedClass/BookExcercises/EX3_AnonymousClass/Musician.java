@@ -6,6 +6,16 @@ public class Musician implements Instrument{
         public void makeSound() {
             System.out.println("Make sound method");
         }
+
+        public void play() {
+            Instrument instrument = new Instrument() {
+                @Override
+                public void makeSound() {
+                    System.out.println("Interface object make sound method");
+                }
+            };
+            instrument.makeSound();
+        }
 }
 
 
