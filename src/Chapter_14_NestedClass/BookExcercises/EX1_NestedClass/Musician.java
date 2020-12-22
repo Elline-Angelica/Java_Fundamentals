@@ -1,4 +1,4 @@
-package Chapter_14_NestedClass.BookExcercises;
+package Chapter_14_NestedClass.BookExcercises.EX1_NestedClass;
 
 public class Musician {
 
