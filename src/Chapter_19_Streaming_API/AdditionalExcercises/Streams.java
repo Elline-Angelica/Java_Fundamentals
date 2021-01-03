@@ -1,10 +1,12 @@
 package Chapter_19_Streaming_API.AdditionalExcercises;
 
+import java.awt.*;
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class Str1 {
+public class Streams {
     public static void main(String[] args) {
 
         //1. Integer Stream
@@ -38,6 +40,20 @@ public class Str1 {
         Arrays.stream(names) //Stream.of(names)
                 .filter( x -> x.startsWith("S"))
                 .sorted()
+                .forEach(System.out::println);
+
+        //6. Average of squares of an int array
+        Arrays.stream(new int[]{2,3,4,6,7})
+                .map(x -> x * x)
+                .average()
+                .ifPresent(System.out::println);
+
+        //7. Stream from List, filter and print
+        List<String> people = Arrays.asList("Al","Beta","Gamma","Echo","Adam","Sofia","Selena");
+        people
+                .stream()
+                .map(String::toLowerCase)
+                .filter(x -> x.startsWith("a"))
                 .forEach(System.out::println);
     }
 }
