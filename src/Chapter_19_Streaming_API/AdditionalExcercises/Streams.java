@@ -1,7 +1,9 @@
 package Chapter_19_Streaming_API.AdditionalExcercises;
 
 import java.awt.*;
+import java.nio.file.Files;
 import java.util.Arrays;
+import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -55,5 +57,16 @@ public class Streams {
                 .map(String::toLowerCase)
                 .filter(x -> x.startsWith("a"))
                 .forEach(System.out::println);
+
+        //13. Reduction - sum
+        double total = Stream.of(7.3, 1.5, 4.8)
+                .reduce(0.0,(Double a, Double b) -> a + b);
+        System.out.println("Total: " + total);
+
+        //14. Reduction - summary statistics
+        IntSummaryStatistics summary = IntStream.of(7,2,19,3,49,34)
+                .summaryStatistics();
+        System.out.println(summary);
+
     }
 }
