@@ -16,5 +16,22 @@ public class Order {
         this.foodItems = foodItems;
     }
 
-    //public double getTotalPrice(){ }
+   public double getTotalPrice(){
+        Food food = new Food();
+        double addPrice = food.getPrice();
+        double totalPrice = 0;
+        totalPrice += addPrice;
+        return  totalPrice;
+   }
+
+    public double applyDiscount(double percent){
+        double totalPriceAfterDiscount = 0;
+        totalPriceAfterDiscount = getTotalPrice()-((percent/100)*getTotalPrice());
+        return totalPriceAfterDiscount;
+    }
+
+    public double getDiscount(){
+        return percentDiscount;
+    }
+
 }
