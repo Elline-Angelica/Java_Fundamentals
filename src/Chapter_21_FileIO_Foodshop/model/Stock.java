@@ -1,6 +1,9 @@
 package Chapter_21_FileIO_Foodshop.model;
 
 import Chapter_21_FileIO_Foodshop.exception.FoodAlreadyInStockException;
+import Chapter_21_FileIO_Foodshop.exception.FoodNotInStockException;
+import Chapter_21_FileIO_Foodshop.exception.NotEnoughFoodInStockException;
+import Chapter_21_FileIO_Foodshop.exception.NotEnoughMoneyInRegisterException;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -28,14 +31,24 @@ public class Stock {
     }
 
     public void removeFood(Food food){
-        foodStock.remove(food);
+        this.foodStock.remove(food);
     }
 
-    public void removeFromStock(Food food, int amountToRemove){
+    public void addToStock(Food food, int amountToAdd) throws FoodNotInStockException{
+        if(foodStock.containsKey(food)){
+            int newAmount = foodStock.get(food) + amountToAdd;
+            foodStock.replace(food,newAmount);
+        } else {
+            throw new FoodNotInStockException("Food " + food.getName() + " does not have stock");
+        }
 
     }
 
-    public void addToStock(Food food, int amountToAdd){
-        this.foodStock.put(food,amountToAdd);
+    public void removeFromStock(Food food, int amountToRemove) throws NotEnoughFoodInStockException {
+        if (this.foodStock.get(food) < amountToRemove) {
+            throw new NotEnoughFoodInStockException("There is not enough of " + food.getName() + " in stock. Stock: " + this.foodStock.get(food) + " | Trying to remove: " + amountToRemove);
+        } else {
+            this.foodStock.replace(food, foodStock.get(food) - amountToRemove);
+        }
     }
 }
