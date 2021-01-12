@@ -17,11 +17,13 @@ public class Stock {
     }
 
     public void addFood(Food food){
-
+        if(food != null){
+            foodStock.putIfAbsent(food,1);
+        }
     }
 
     public void removeFood(Food food){
-
+        foodStock.remove(food);
     }
 
     public void removeFromStock(Food food, int amountToRemove){
