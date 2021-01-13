@@ -37,4 +37,27 @@ public class Food {
     public void setBrand(String brand) {
         this.brand = brand;
     }
+
+    //TODO Override equals method - For contains method
+
+    @Override
+    public boolean equals(Object o) {
+        if(this == o) return true;
+        if(o == null || getClass() != o.getClass()) return false;
+        Food food = (Food) o;
+        return Double.compare(food.price, price) == 0 &&
+                Double.compare(food.calorie, calorie) == 0 &&
+                Object.equals(name, food.name) &&
+                Object.equals(brand, food.brand);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
