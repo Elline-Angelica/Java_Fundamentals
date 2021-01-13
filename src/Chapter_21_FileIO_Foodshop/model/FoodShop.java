@@ -2,15 +2,17 @@ package Chapter_21_FileIO_Foodshop.model;
 
 import Chapter_21_FileIO_Foodshop.service.CustomerRepository;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class FoodShop {
     private List<Register> registers = new LinkedList<>();
     private Stock stock;
     private CustomerRepository customerRepository;
+
+    public FoodShop(){
+        this.registers = new ArrayList<>();
+        registers.add(new Register());
+    }
 
     public List<Register> getRegisters() {
         return registers;
