@@ -13,6 +13,10 @@ import java.util.Set;
 public class Stock {
     private Map<Food,Integer> foodStock;
 
+    {
+        foodStock = new HashMap<>();
+    }
+
     public Map<Food, Integer> getFoodStock() {
         return foodStock;
     }
@@ -44,9 +48,13 @@ public class Stock {
 
     }
 
-    public void removeFromStock(Food food, int amountToRemove) throws NotEnoughFoodInStockException {
-        if (this.foodStock.get(food) < amountToRemove) {
+    public void removeFromStock(Food food, int amountToRemove) throws NotEnoughFoodInStockException,FoodNotInStockException {
+        if (!foodStock.containsKey(food)) {
             throw new NotEnoughFoodInStockException("There is not enough of " + food.getName() + " in stock. Stock: " + this.foodStock.get(food) + " | Trying to remove: " + amountToRemove);
+        }
+
+        if (this.foodStock.get(food) < amountToRemove) {
+            throw new FoodNotInStockException("Food " + food.getName() + " does not have a stock!");
         } else {
             this.foodStock.replace(food, foodStock.get(food) - amountToRemove);
         }
