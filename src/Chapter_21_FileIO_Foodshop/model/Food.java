@@ -1,10 +1,16 @@
 package Chapter_21_FileIO_Foodshop.model;
 
+import java.util.Objects;
+
 public class Food {
     private String name;
     private double price;
     private double calorie;
     private String brand;
+
+    public Food (String name){
+        this.name = name;
+    }
 
     public String getName() {
         return name;
@@ -47,17 +53,22 @@ public class Food {
         Food food = (Food) o;
         return Double.compare(food.price, price) == 0 &&
                 Double.compare(food.calorie, calorie) == 0 &&
-                Object.equals(name, food.name) &&
-                Object.equals(brand, food.brand);
+                Objects.equals(name, food.name) &&
+                Objects.equals(brand, food.brand);
     }
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        return Objects.hash(name,price,calorie,brand);
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Food{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", calorie=" + calorie +
+                ", brand='" + brand + '\'' +
+                '}';
     }
 }
