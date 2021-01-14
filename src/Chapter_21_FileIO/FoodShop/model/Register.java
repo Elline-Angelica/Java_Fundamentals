@@ -1,7 +1,7 @@
-package Chapter_21_FileIO_Foodshop.model;
+package Chapter_21_FileIO.FoodShop.model;
 
 
-import Chapter_21_FileIO_Foodshop.exception.NotEnoughMoneyInRegisterException;
+import Chapter_21_FileIO.FoodShop.exception.NotEnoughMoneyInRegisterException;
 
 public class Register {
     private double money;

@@ -1,9 +1,9 @@
-package Chapter_21_FileIO_Foodshop.application;
+package Chapter_21_FileIO.FoodShop.application;
 
-import Chapter_21_FileIO_Foodshop.exception.FoodAlreadyInStockException;
-import Chapter_21_FileIO_Foodshop.exception.FoodNotInStockException;
-import Chapter_21_FileIO_Foodshop.model.Food;
-import Chapter_21_FileIO_Foodshop.model.Stock;
+import Chapter_21_FileIO.FoodShop.exception.FoodAlreadyInStockException;
+import Chapter_21_FileIO.FoodShop.exception.FoodNotInStockException;
+import Chapter_21_FileIO.FoodShop.model.Food;
+import Chapter_21_FileIO.FoodShop.model.Stock;
 
 import java.util.Map;
 

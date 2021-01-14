@@ -1,4 +1,4 @@
-package Chapter_21_FileIO_Foodshop.model;
+package Chapter_21_FileIO.FoodShop.model;
 
 public class Customer {
     private String name;

@@ -1,4 +1,4 @@
-package Chapter_21_FileIO_Foodshop.exception;
+package Chapter_21_FileIO.FoodShop.exception;
 
 public class NotEnoughFoodInStockException extends Throwable {
     public NotEnoughFoodInStockException(String s) {

@@ -1,4 +1,4 @@
-package Chapter_21_FileIO_Foodshop.exception;
+package Chapter_21_FileIO.FoodShop.exception;
 
 public class FoodAlreadyInStockException extends Throwable {
     public FoodAlreadyInStockException() {

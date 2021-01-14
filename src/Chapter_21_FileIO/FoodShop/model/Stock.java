@@ -1,14 +1,11 @@
-package Chapter_21_FileIO_Foodshop.model;
+package Chapter_21_FileIO.FoodShop.model;
 
-import Chapter_21_FileIO_Foodshop.exception.FoodAlreadyInStockException;
-import Chapter_21_FileIO_Foodshop.exception.FoodNotInStockException;
-import Chapter_21_FileIO_Foodshop.exception.NotEnoughFoodInStockException;
-import Chapter_21_FileIO_Foodshop.exception.NotEnoughMoneyInRegisterException;
+import Chapter_21_FileIO.FoodShop.exception.FoodAlreadyInStockException;
+import Chapter_21_FileIO.FoodShop.exception.FoodNotInStockException;
+import Chapter_21_FileIO.FoodShop.exception.NotEnoughFoodInStockException;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class Stock {
     private Map<Food,Integer> foodStock;
@@ -25,7 +22,7 @@ public class Stock {
         this.foodStock = foodStock;
     }
 
-    public void addFood(Food food) throws FoodAlreadyInStockException{ //add food to map
+    public void addFood(Food food) throws FoodAlreadyInStockException { //add food to map
         if(food != null){
             Integer value = foodStock.putIfAbsent(food,1);
             if ( value == 0) {
@@ -38,7 +35,7 @@ public class Stock {
         this.foodStock.remove(food);
     }
 
-    public void addToStock(Food food, int amountToAdd) throws FoodNotInStockException{
+    public void addToStock(Food food, int amountToAdd) throws FoodNotInStockException {
         if(foodStock.containsKey(food)){
             int newAmount = foodStock.get(food) + amountToAdd;
             foodStock.replace(food,newAmount);

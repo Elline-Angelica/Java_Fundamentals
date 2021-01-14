@@ -1,6 +1,6 @@
-package Chapter_21_FileIO_Foodshop.model;
+package Chapter_21_FileIO.FoodShop.model;
 
-import Chapter_21_FileIO_Foodshop.service.CustomerRepository;
+import Chapter_21_FileIO.FoodShop.service.CustomerRepository;
 
 import java.util.*;
 
