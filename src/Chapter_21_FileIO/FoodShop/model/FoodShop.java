@@ -1,5 +1,8 @@
 package Chapter_21_FileIO.FoodShop.model;
 
+import Chapter_15_Exceptions.AdditionalExcercises.Exceptions.NotEnoughMoneyException;
+import Chapter_21_FileIO.FoodShop.exception.FoodNotInStockException;
+import Chapter_21_FileIO.FoodShop.exception.NotEnoughFoodInStockException;
 import Chapter_21_FileIO.FoodShop.service.CustomerRepository;
 
 import java.util.*;
@@ -9,9 +12,11 @@ public class FoodShop {
     private Stock stock;
     private CustomerRepository customerRepository;
 
-    public FoodShop(){
+    public FoodShop(Stock stock) {
+        this.stock = stock;
         this.registers = new ArrayList<>();
         registers.add(new Register());
+
     }
 
     public List<Register> getRegisters() {
@@ -38,8 +43,58 @@ public class FoodShop {
         this.customerRepository = customerRepository;
     }
 
-    public Map<Food,Integer> sellFood(Order order, Customer customer){
-        Map map = new HashMap();
-        return map;
+    public Map<Food, Integer> sellFood(Order order, Customer payingCustomer) throws NotEnoughMoneyException, NotEnoughFoodInStockException, FoodNotInStockException {
+        checkStock(order);
+        checkCustomerMoney(payingCustomer, order);
+        removeFoodFromStock(order);
+        updateCustomersMoney(payingCustomer, order);
+        addMoneyToRegister(order);
+
+        return order.getFoodItems();
+    }
+
+    // PRIVATE METHODS!!!
+    private void checkStock(Order order) throws NotEnoughFoodInStockException, FoodNotInStockException{
+        for (Map.Entry<Food, Integer> entry : order.getFoodItems().entrySet()) {
+            Food food = entry.getKey();
+            Integer amount = entry.getValue();
+            checkFoodInStock(food, amount);
+        }
+    }
+
+    private void checkFoodInStock(Food food, Integer amount) throws NotEnoughFoodInStockException, FoodNotInStockException{
+        Map<Food, Integer> foodStock = stock.getFoodStock();
+
+        if(!foodStock.containsKey(food)) {
+            throw new FoodNotInStockException(food.getName() + " is not in stock!");
+        }
+
+        if (foodStock.get(food) < amount) {
+            throw new NotEnoughFoodInStockException("There is not enough " + food.getName() + " left!");
+        }
+    }
+
+    private void checkCustomerMoney(Customer customer, Order order) throws NotEnoughMoneyException {
+        boolean notEnough = order.getTotalPrice() > customer.getMoney();
+        if (notEnough) {
+            throw new NotEnoughMoneyException("Order costs " + order.getTotalPrice() + "€ en je hebt " + customer.getMoney() + "€");
+        }
+    }
+
+    private void removeFoodFromStock(Order order) throws NotEnoughFoodInStockException, FoodNotInStockException{
+        for (Map.Entry<Food, Integer> entry : order.getFoodItems().entrySet()) {
+            Food food = entry.getKey();
+            Integer amount = entry.getValue();
+            stock.removeFromStock(food, amount);
+        }
+    }
+
+    private void updateCustomersMoney(Customer customer, Order order) {
+        customer.setMoney(customer.getMoney() - order.getTotalPrice());
+    }
+
+    private void addMoneyToRegister(Order order) {
+        registers.get(0).addMoney(order.getTotalPrice());
+        // TODO register -> multithreading
     }
 }
