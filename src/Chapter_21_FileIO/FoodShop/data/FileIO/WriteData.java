@@ -1,4 +1,4 @@
-package Chapter_21_FileIO.Excercises.FileIODemo;
+package Chapter_21_FileIO.FoodShop.data.FileIO;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -8,7 +8,7 @@ public class WriteData {
 
     public void writeStringToFile(String myText) {
 
-        File myTextFile = new File("resources/MyTextFile");
+        File myTextFile = new File("resources/smolMyTextFile");
 
         try {
             FileWriter fileWriter = new FileWriter(myTextFile, true);

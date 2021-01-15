@@ -1,4 +1,4 @@
-package Chapter_21_FileIO.Excercises.FileIODemo;
+package Chapter_21_FileIO.FoodShop.data.FileIO;
 
 public class DemoApp {
     public static void main(String[] args) {
