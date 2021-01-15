@@ -1,4 +1,4 @@
-package Chapter_21_FileIO.FoodShop.data.FileIO;
+package Chapter_21_FileIO.Excercises.FileIO;
 
 import java.io.File;
 import java.io.FileWriter;

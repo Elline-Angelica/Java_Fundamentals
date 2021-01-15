@@ -2,13 +2,17 @@ package Chapter_21_FileIO.FoodShop.model;
 
 public class Customer {
     private String name;
-    private final int id;
+    private final int ID;
     private String email;
     private double money;
 
-    public Customer(String name, int id, String email, double money) {
+    public Customer(){
+        this("", 0, "", 0);
+    }
+
+    public Customer(String name, int ID, String email, double money) {
         this.name = name;
-        this.id = id;
+        this.ID = ID;
         this.email = email;
         this.money = money;
     }
@@ -21,8 +25,11 @@ public class Customer {
         this.name = name;
     }
 
-    public int getId() {
-        return id;
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
     }
 
     public String getEmail() {
@@ -44,6 +51,6 @@ public class Customer {
     @Override
     public String toString() {
         return String.format("CUSTOMER   Name: %-10s  ID: %-10s  E-mail: %-15s  Money: %-5.2f€  ",
-                name, id, email, money);
+                name, ID, email, money);
     }
 }

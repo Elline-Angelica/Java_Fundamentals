@@ -7,7 +7,7 @@ import Chapter_21_FileIO.FoodShop.model.Stock;
 
 import java.util.Map;
 
-public class Application_Demo {
+public class Application_1 {
     public static void main(String[] args) {
 
         Stock stock = new Stock();
