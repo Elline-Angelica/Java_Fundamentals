@@ -13,9 +13,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class CustomerDaoImpl implements CustomerDao {
-    Customer customer = new Customer();
-
-    @Override
     public Customer readCustomer() {
 
         Customer customer = null;
