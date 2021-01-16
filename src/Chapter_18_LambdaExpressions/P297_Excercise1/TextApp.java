@@ -1,4 +1,4 @@
-package Chapter_18_LambdaExpressions.P297;
+package Chapter_18_LambdaExpressions.P297_Excercise1;
 
 public class TextApp {
     public static void main(String[] args) {

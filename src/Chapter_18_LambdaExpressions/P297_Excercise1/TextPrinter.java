@@ -1,4 +1,4 @@
-package Chapter_18_LambdaExpressions.P297;
+package Chapter_18_LambdaExpressions.P297_Excercise1;
 
 public class TextPrinter {
     private String sentence;
@@ -8,14 +8,10 @@ public class TextPrinter {
     }
 
     public void printFilteredWords(WordFilter filter) {
-        for(String w : sentence.split(" ")) {
-            if(filter.isValid(w)) {
+        for (String w : sentence.split(" ")) {
+            if (filter.isValid(w)) {
                 System.out.println(w);
             }
         }
-    }
-
-    public interface WordFilter {
-        boolean isValid(String s);
     }
 }
