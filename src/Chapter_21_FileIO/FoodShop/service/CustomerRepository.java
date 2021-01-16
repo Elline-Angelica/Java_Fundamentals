@@ -1,7 +1,7 @@
 package Chapter_21_FileIO.FoodShop.service;
 
 import Chapter_21_FileIO.FoodShop.data.CustomerDao;
-import Chapter_21_FileIO.FoodShop.data.fileIO.CustomerDaoImpl;
+import Chapter_21_FileIO.FoodShop.data.CustomerDaoImpl;
 import Chapter_21_FileIO.FoodShop.model.Customer;
 
 public class CustomerRepository {

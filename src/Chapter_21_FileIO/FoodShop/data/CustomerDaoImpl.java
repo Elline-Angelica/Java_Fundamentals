@@ -1,4 +1,4 @@
-package Chapter_21_FileIO.FoodShop.data.fileIO;
+package Chapter_21_FileIO.FoodShop.data;
 
 import Chapter_21_FileIO.FoodShop.configuration.FilePaths;
 import Chapter_21_FileIO.FoodShop.data.CustomerDao;
