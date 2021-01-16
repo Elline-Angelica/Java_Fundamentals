@@ -10,5 +10,17 @@ public class TextApp {
         tp.printFilteredWords(s -> s.length() > 4);
         System.out.println("\n=========== Words starting with 'e' ===========\n");
         tp.printFilteredWords(s -> s.startsWith("a"));
+        System.out.println("\n=== Words starting with 'e' on second place ===\n");
+        tp.printFilteredWords(s -> s.startsWith("e",1));
+        System.out.println("\n======= Words containing 'e' two times ========\n");
+        tp.printFilteredWords(s -> {
+            int count = 0;
+            for(char ch : s.toCharArray()) {
+                if (ch == 'e') {
+                    count++;
+                }
+            }
+            return count == 2;
+        });
     }
 }
