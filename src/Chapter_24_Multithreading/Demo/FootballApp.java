@@ -1,4 +1,4 @@
-package Chapter_22_Multithreading.Demo;
+package Chapter_24_Multithreading.Demo;
 
 public class FootballApp {
     public static void main(String[] args) {
